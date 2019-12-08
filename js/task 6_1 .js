@@ -1,5 +1,4 @@
 let arr = [-1, 10, -9, 5, 6, -10];
-let max = [];
 let total = [];
 
 for (let i = 0; i < arr.length - 1; i++) {
@@ -7,7 +6,6 @@ for (let i = 0; i < arr.length - 1; i++) {
         total.push(acc);
         return acc += item;
     }, 0);
-    max.push(Math.max.apply(null, total));
     delete arr[i]
 }
 let a = Math.max.apply(null, total);
